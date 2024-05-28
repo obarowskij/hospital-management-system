@@ -1,0 +1,6 @@
+django
+psycopg2-binary
+drf-spectacular
+djangorestframework
+pytest
+pytest-django
