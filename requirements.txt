@@ -4,3 +4,4 @@ drf-spectacular
 djangorestframework
 pytest
 pytest-django
+flake8
