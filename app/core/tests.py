@@ -9,6 +9,7 @@ from psycopg2 import OperationalError as Psycopg2OpError
 
 from django.core.management import call_command
 from django.db.utils import OperationalError
+from django.test import TestCase
 
 
 @pytest.mark.django_db
@@ -31,5 +32,10 @@ class TestWaitForDbCommand:
         assert patched_check.call_count == 5
 
         patched_check.assert_called_with(databases = ['default'])
+
+class TestTest(TestCase):
+    
+    def test_test(self):
+        self.assertEqual(1,1)
 
 
